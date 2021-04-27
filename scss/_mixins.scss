@@ -1,0 +1,32 @@
+@mixin header__style($family, $weight, $size, $lineHeight){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+}
+
+@mixin hero__style($family, $weight, $size, $lineHeight,$color-darkBlue){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+    color: $color-darkBlue;
+}
+
+@mixin block-text($family, $weight, $size, $lineHeight, $color, $maxWidth, $margin) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+    color: $color;
+    max-width: $maxWidth;
+    margin: $margin;
+}
+
+@mixin picture($height, $width, $position, $horizon, $vertical) {
+    height: $height;
+    width: $width;
+    position: $position;
+    left: $horizon;
+    bottom: $vertical;
+}

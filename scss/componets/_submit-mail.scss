@@ -1,0 +1,88 @@
+.submit-mail {
+    margin-top: vw(120);
+    .col-6 {
+        width: 50%;
+    }
+    &__container {
+        max-width: vw(1300);
+        margin: 0 auto;
+        background-color: #F5FBFF;
+        position: relative;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        height: vw(395);
+
+    }
+    &__title {
+        @include block-text("Cabernet JF", 900, vw(48), vw(60), $color-darkBlue, vw(500), 0 0 vw(32) 0);
+        font-family: sans-serif;
+    }
+    &__description {
+        @include block-text("Euclid Circular B", 400, vw(18), vw(27), $color-grey, vw(495),vw(32) 0 vw(42));
+        font-family: sans-serif;
+    }
+    .form-control {
+        border-radius: vw(9999);
+        border: none;
+        padding: vw(16) vw(163) vw(15) vw(25);
+        outline: none;
+        margin: 0 vw(20) vw(24) 0;
+    }
+    .submit-btn {
+        padding: vw(14) vw(31);
+        background-color: #0013FF;
+        box-shadow: 0px 5px 10px rgba(4, 0, 98, 0.05);
+        border-radius: 9999px;
+        border: none;
+        @include hero__style("Roboto", 700, vw(16), vw(24), $color-white);
+        font-family: sans-serif;
+        text-align: center;
+        cursor: pointer;
+    }
+    &__more-description {
+        @include hero__style("Euclid Circular B", 400, vw(15), vw(19), #6D758D);
+        font-family: sans-serif;
+    }
+    &__more > a {
+        @include hero__style("Euclid Circular B", 400, vw(15), vw(19), #6D758D);
+        font-family: sans-serif;
+    }
+    &__left::before {
+        content: "";
+        position: absolute;
+        top: vw(-44);
+        left: vw(162);
+        z-index: 10;
+        height: vw(483);
+        width: vw(376);
+        background: #C7E3E9;
+        border: vw(4) solid $color-white;
+        box-shadow: 0 vw(20) vw(40) rgba(4, 0, 98, 0.05);
+        border-radius: vw(14);
+    }
+    .img-1 {
+        position: absolute;
+        left: vw(186);
+        top: vw(20);
+        z-index: 20;
+        height: vw(355);
+        width: vw(328);
+    }
+    .img-2 {
+        position: absolute;
+        left: vw(186);
+        bottom: vw(20);
+        z-index: 30;    
+        height: vw(247);
+        width: vw(335);
+    }
+    .img-3__text {
+        position: absolute;
+        top: vw(-35);
+        right: vw(103);
+        height: vw(70);
+        width: vw(91);
+    }
+}

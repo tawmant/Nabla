@@ -1,0 +1,50 @@
+.header {
+    box-shadow: 0 vw(5) vw(10) rgba(4, 0, 98, 0.05);
+    &__container {
+        max-width: vw(1200);
+        margin: 0 auto;
+    }
+    &__nav {
+        display: flex; 
+        padding: vw(16) 0; 
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        color: $color-darkBlue;
+        font-size: vw(32);
+    }
+    &__btn {
+        @include header__style('Euclid Circular B',600,vw(15),vw(22));
+        cursor: pointer;
+        border-radius: vw(9999);
+        background-color: $color-blue;
+        text-align: center;
+        color: $color-white;
+        border: none;
+        height: vw(42);
+        width: vw(157);
+        transition: .3s;
+    }
+    &__btn:hover {
+        box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    }
+}
+
+.menu {
+    display: flex;
+    cursor: pointer;
+    &__item {
+        @include header__style('Euclid Circular B',400,vw(15),vw(22));
+        color: $color-darkBlue;
+        margin-right: vw(20);
+        font-family: sans-serif;
+    }
+}
+
+.lang {
+    color: $color-darkBlue;
+    border: 1px solid #fff;
+    margin-right: vw(35);
+}
+

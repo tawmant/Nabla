@@ -1,0 +1,47 @@
+.available {
+    .col-6 {
+        width: 50%;
+    }
+    .container {
+        max-width: vw(1300);
+        margin: 0 auto;
+        position: relative;
+    }
+    .row {
+        display: flex;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FEF1EF;
+        height: vw(648);
+        width: vw(648);
+        img {
+            width: vw(234);
+            height: vw(508);
+            z-index: 10;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__text-content {
+        margin-left: vw(100);
+    }
+    &__title {
+        @include block-text("Cabernet JF", 900, vw(48), vw(60), $color-darkBlue, vw(500), 0 0 vw(32) 0);
+        font-family: sans-serif;
+    }
+    &__description {
+        @include block-text("Euclid Circular B", 400, vw(18), vw(27), $color-grey, vw(495),vw(32) 0);
+        font-family: sans-serif;
+    }
+    &__img-1 {
+        @include picture(vw(476), vw(392), absolute, vw(318), vw(0));
+    }
+    &__img-2 {
+        @include picture(vw(288), vw(220), absolute, vw(535), vw(0));
+    }
+}
